@@ -1,1 +1,2 @@
-# A00822027-GraficasComputacionales
+# A00822027 
+# Benjamín Valdez Rodríguez
