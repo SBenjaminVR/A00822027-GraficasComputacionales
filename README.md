@@ -1,2 +1,1 @@
-# A00822027 
-# Benjamín Valdez Rodríguez
+# A00822027 - Benjamín Valdez Rodríguez
