@@ -58,6 +58,14 @@ class sphere {
         ctx.fill();
     }
 
+    collide(xMin, xMax, yMin, yMax) {
+        if (((this.x + this.radius) > xMin && (this.x + this.radius) < xMax) || ((this.x + this.radius) > xMin && (this.x - this.radius) < xMax)) {
+            if ((this.y + this.radius) > yMin && (this.y + this.radius) < yMax) {
+                this.right = !this.right
+            }
+        }
+    }
+
     update(xLimit, yLimit) {
         if (this.x + this.radius > xLimit) { this.right = false; }
         if (this.x < this.radius) { this.right = true; }
@@ -101,6 +109,8 @@ function update(ball, player1, player2) {
         movePlayer2 = false;
     }
 
+    ball.collide(canvas.width * 0.01, (canvas.width * 0.01) + 15, player1.y, player1.y+70);
+    ball.collide(canvas.width - ((canvas.width * 0.01) + 15), canvas.width - ((canvas.width * 0.01) + 15) + 15, player2.y, player2.y+70);
     ball.draw();
     player1.draw();
     player2.draw();
