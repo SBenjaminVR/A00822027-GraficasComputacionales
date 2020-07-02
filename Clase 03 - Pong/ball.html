@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ball</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body onload="main()">
+    <div class="container">
+        <h1>Pong</h1>
+        <canvas id="ballCanvas" width="800" height="400"
+            style="border:1px solid #d3d3d3; background-color: #34495E;"></canvas>
+    </div>
+        <hr>
+        <div>⠀Player 1:  ⠀
+            <a id="player1Blue" class="waves-effect waves-light btn-small light-blue accent-1"></a>
+            <a id="player1Pink" class="waves-effect waves-light btn-small pink lighten-1"></a>
+            <a id="player1Teal" class="waves-effect waves-light btn-small teal lighten-3"></a>
+            <a id="player1White" class="waves-effect waves-light btn-small white"></a>
+        </div>
+        <hr>
+        <div>⠀Player 2:  ⠀
+            <a id="player2Blue" class="waves-effect waves-light btn-small light-blue accent-1"></a>
+            <a id="player2Pink" class="waves-effect waves-light btn-small pink lighten-1"></a>
+            <a id="player2Teal" class="waves-effect waves-light btn-small teal lighten-3"></a>
+            <a id="player2White" class="waves-effect waves-light btn-small white"></a>
+        </div>
+        <hr>
+        <div>⠀Ball:  ⠀⠀⠀⠀
+            <a id="ballYellow" class="waves-effect waves-light btn-small yellow"></a>
+            <a id="ballRed" class="waves-effect waves-light btn-small red darken-1"></a>
+            <a id="ballPurple" class="waves-effect waves-light btn-small deep-purple lighten-3"></a>
+            <a id="ballWhite" class="waves-effect waves-light btn-small white"></a>
+        </div>
+        <hr>
+   
+    <script src="ball.js"></script>
+</body>
+
+</html>
