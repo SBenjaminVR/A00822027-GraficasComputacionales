@@ -4,8 +4,13 @@ let marsMoon, marsMoon2;
 
 let asteroid, asteroid2, asteroid3, asteroid4, asteroid5, asteroid6, asteroid7, asteroid8, asteroid9;
 let jupiterMoon, jupiterMoon2, jupiterMoon3, jupiterMoon4, jupiterMoon5, jupiterMoon6, jupiterMoon7, jupiterMoon8, jupiterMoon9;
-
+let saturnMoon, saturnMoon2, saturnMoon3, saturnMoon4, saturnMoon5, saturnMoon6, saturnMoon7, saturnMoon8, saturnMoon9;
 let saturnRing;
+
+let uranusMoon, uranusMoon2, uranusMoon3, uranusMoon4, uranusMoon5, uranusMoon6, uranusMoon7, uranusMoon8, uranusMoon9;
+let neptuneMoon, neptuneMoon2, neptuneMoon3, neptuneMoon4, neptuneMoon5, neptuneMoon6, neptuneMoon7, neptuneMoon8, neptuneMoon9;
+let plutoMoon, plutoMoon2, plutoMoon3, plutoMoon4, plutoMoon5, plutoMoon6, plutoMoon7, plutoMoon8, plutoMoon9;
+
 let planetSegments = 48;
 let mercuryData = storePlanet(88, 0.012, 22, "textures/mercury.png", 0.5, planetSegments);
 let venusData = storePlanet(224, 0.02, 27, "textures/venus.jpg", 0.9, planetSegments);
@@ -29,7 +34,7 @@ let asteroid8Data = storePlanet(286, 0.02, 41, "textures/asteroid.jpg", asteroid
 let asteroid9Data = storePlanet(284, 0.02, 41, "textures/asteroid.jpg", asteroidSize, planetSegments);
 
 let jupiterData = storePlanet(700, 0.012, 48, "textures/jupiter.jpg", 4, planetSegments);
-let jupiterMoonData = storePlanet(23.5, 0.01, 1, "textures/moon.jpg", 1, planetSegments);
+let jupiterMoonData = storePlanet(23.5, 0.01, 1, "textures/moon.jpg", 0.2, planetSegments);
 let jupiterMoon2Data = storePlanet(22.5, 0.01, 1.2, "textures/moon.jpg", 0.2, planetSegments);
 let jupiterMoon3Data = storePlanet(21.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
 let jupiterMoon4Data = storePlanet(20.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
@@ -41,9 +46,48 @@ let jupiterMoon9Data = storePlanet(16.5, 0.01, 1.6, "textures/moon.jpg", 0.2, pl
 
 
 let saturnData = storePlanet(800, 0.13, 54, "textures/saturn.jpg", 3.4, planetSegments);
+let saturnMoonData = storePlanet(23.5, 0.01, 1, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon2Data = storePlanet(22.5, 0.01, 1.2, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon3Data = storePlanet(21.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon4Data = storePlanet(20.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon5Data = storePlanet(19.5, 0.01, 1.1, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon6Data = storePlanet(18.5, 0.01, 1.3, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon7Data = storePlanet(17.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon8Data = storePlanet(16.5, 0.01, 1.5, "textures/moon.jpg", 0.2, planetSegments);
+let saturnMoon9Data = storePlanet(16.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
+
 let uranusData = storePlanet(900, 0.134, 60, "textures/uranus.jpg", 2.3, planetSegments);
+let uranusMoonData = storePlanet(23.5, 0.01, 1, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon2Data = storePlanet(22.5, 0.01, 1.2, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon3Data = storePlanet(21.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon4Data = storePlanet(20.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon5Data = storePlanet(19.5, 0.01, 1.1, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon6Data = storePlanet(18.5, 0.01, 1.3, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon7Data = storePlanet(17.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon8Data = storePlanet(16.5, 0.01, 1.5, "textures/moon.jpg", 0.2, planetSegments);
+let uranusMoon9Data = storePlanet(16.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
+
 let neptuneData = storePlanet(1000, 0.138, 65, "textures/neptune.jpg", 2.2, planetSegments);
+let neptuneMoonData = storePlanet(23.5, 0.01, 1, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon2Data = storePlanet(22.5, 0.01, 1.2, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon3Data = storePlanet(21.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon4Data = storePlanet(20.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon5Data = storePlanet(19.5, 0.01, 1.1, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon6Data = storePlanet(18.5, 0.01, 1.3, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon7Data = storePlanet(17.5, 0.01, 1.4, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon8Data = storePlanet(16.5, 0.01, 1.5, "textures/moon.jpg", 0.2, planetSegments);
+let neptuneMoon9Data = storePlanet(16.5, 0.01, 1.6, "textures/moon.jpg", 0.2, planetSegments);
+
 let plutoData = storePlanet(1100, 0.018, 70, "textures/pluto.jpg", 0.38, planetSegments);
+let plutoMoonData = storePlanet(23.5, 0.01, 1, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon2Data = storePlanet(22.5, 0.01, 1.2, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon3Data = storePlanet(21.5, 0.01, 1.4, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon4Data = storePlanet(20.5, 0.01, 1.6, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon5Data = storePlanet(19.5, 0.01, 1.1, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon6Data = storePlanet(18.5, 0.01, 1.3, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon7Data = storePlanet(17.5, 0.01, 1.4, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon8Data = storePlanet(16.5, 0.01, 1.5, "textures/moon.jpg", 0.05, planetSegments);
+let plutoMoon9Data = storePlanet(16.5, 0.01, 1.6, "textures/moon.jpg", 0.05, planetSegments);
 
 let pointLight, earthOrbit, ring, controls, scene, camera, renderer;
 var orbitData = { value: 200, runOrbit: true, runRotation: true };
@@ -195,11 +239,49 @@ function update(renderer, scene, camera, controls) {
 
 
     movePlanet(saturn, saturnData, time);
-    movePlanet(uranus, uranusData, time);
-    movePlanet(neptune, neptuneData, time);
-    movePlanet(pluto, plutoData, time);
-
     movePlanet(saturnRing, saturnData, time, true);
+    moveMoon(saturnMoon, saturn, saturnMoonData, time);
+    moveMoon(saturnMoon2, saturn, saturnMoon2Data, time);
+    moveMoon(saturnMoon3, saturn, saturnMoon3Data, time);
+    moveMoon(saturnMoon4, saturn, saturnMoon4Data, time);
+    moveMoon(saturnMoon5, saturn, saturnMoon5Data, time);
+    moveMoon(saturnMoon6, saturn, saturnMoon6Data, time);
+    moveMoon(saturnMoon7, saturn, saturnMoon7Data, time);
+    moveMoon(saturnMoon8, saturn, saturnMoon8Data, time);
+    moveMoon(saturnMoon9, saturn, saturnMoon9Data, time);
+
+    movePlanet(uranus, uranusData, time);
+    moveMoon(uranusMoon, uranus, uranusMoonData, time);
+    moveMoon(uranusMoon2, uranus, uranusMoon2Data, time);
+    moveMoon(uranusMoon3, uranus, uranusMoon3Data, time);
+    moveMoon(uranusMoon4, uranus, uranusMoon4Data, time);
+    moveMoon(uranusMoon5, uranus, uranusMoon5Data, time);
+    moveMoon(uranusMoon6, uranus, uranusMoon6Data, time);
+    moveMoon(uranusMoon7, uranus, uranusMoon7Data, time);
+    moveMoon(uranusMoon8, uranus, uranusMoon8Data, time);
+    moveMoon(uranusMoon9, uranus, uranusMoon9Data, time);
+
+    movePlanet(neptune, neptuneData, time);
+    moveMoon(neptuneMoon, neptune, neptuneMoonData, time);
+    moveMoon(neptuneMoon2, neptune, neptuneMoon2Data, time);
+    moveMoon(neptuneMoon3, neptune, neptuneMoon3Data, time);
+    moveMoon(neptuneMoon4, neptune, neptuneMoon4Data, time);
+    moveMoon(neptuneMoon5, neptune, neptuneMoon5Data, time);
+    moveMoon(neptuneMoon6, neptune, neptuneMoon6Data, time);
+    moveMoon(neptuneMoon7, neptune, neptuneMoon7Data, time);
+    moveMoon(neptuneMoon8, neptune, neptuneMoon8Data, time);
+    moveMoon(neptuneMoon9, neptune, neptuneMoon9Data, time);
+
+    movePlanet(pluto, plutoData, time);
+    moveMoon(plutoMoon, pluto, plutoMoonData, time);
+    moveMoon(plutoMoon2, pluto, plutoMoon2Data, time);
+    moveMoon(plutoMoon3, pluto, plutoMoon3Data, time);
+    moveMoon(plutoMoon4, pluto, plutoMoon4Data, time);
+    moveMoon(plutoMoon5, pluto, plutoMoon5Data, time);
+    moveMoon(plutoMoon6, pluto, plutoMoon6Data, time);
+    moveMoon(plutoMoon7, pluto, plutoMoon7Data, time);
+    moveMoon(plutoMoon8, pluto, plutoMoon8Data, time);
+    moveMoon(plutoMoon9, pluto, plutoMoon9Data, time);
 
     renderer.render(scene, camera);
     requestAnimationFrame(function () {
@@ -269,23 +351,61 @@ function createScene() {
     asteroid9 = addPlanet(asteroid9Data, asteroid9Data.distanceFromAxis, 0);
 
     jupiter = addPlanet(jupiterData, jupiterData.distanceFromAxis, 0);
-    jupiterMoon = addPlanet(jupiterMoonData, jupiterMoonData.distanceFromAxis, 0.8);
-    jupiterMoon2 = addPlanet(jupiterMoon2Data, jupiterMoon2Data.distanceFromAxis, 0.8);
-    jupiterMoon3 = addPlanet(jupiterMoon3Data, jupiterMoon3Data.distanceFromAxis, 0.8);
-    jupiterMoon4 = addPlanet(jupiterMoon4Data, jupiterMoon4Data.distanceFromAxis, 0.8);
-    jupiterMoon5 = addPlanet(jupiterMoon5Data, jupiterMoon5Data.distanceFromAxis, 0.8);
-    jupiterMoon6 = addPlanet(jupiterMoon6Data, jupiterMoon6Data.distanceFromAxis, 0.8);
-    jupiterMoon7 = addPlanet(jupiterMoon7Data, jupiterMoon7Data.distanceFromAxis, 0.8);
-    jupiterMoon8 = addPlanet(jupiterMoon8Data, jupiterMoon8Data.distanceFromAxis, 0.8);
-    jupiterMoon9 = addPlanet(jupiterMoon9Data, jupiterMoon9Data.distanceFromAxis, 0.8);
+    jupiterMoon = addPlanet(jupiterMoonData, jupiterMoonData.distanceFromAxis, 5);
+    jupiterMoon2 = addPlanet(jupiterMoon2Data, jupiterMoon2Data.distanceFromAxis, 5);
+    jupiterMoon3 = addPlanet(jupiterMoon3Data, jupiterMoon3Data.distanceFromAxis, 5);
+    jupiterMoon4 = addPlanet(jupiterMoon4Data, jupiterMoon4Data.distanceFromAxis, 5);
+    jupiterMoon5 = addPlanet(jupiterMoon5Data, jupiterMoon5Data.distanceFromAxis, 5);
+    jupiterMoon6 = addPlanet(jupiterMoon6Data, jupiterMoon6Data.distanceFromAxis, 5);
+    jupiterMoon7 = addPlanet(jupiterMoon7Data, jupiterMoon7Data.distanceFromAxis, 5);
+    jupiterMoon8 = addPlanet(jupiterMoon8Data, jupiterMoon8Data.distanceFromAxis, 5);
+    jupiterMoon9 = addPlanet(jupiterMoon9Data, jupiterMoon9Data.distanceFromAxis, 5);
 
     saturn = addPlanet(saturnData, saturnData.distanceFromAxis, 0);
     saturnRing = createSaturnRing(7, 4.5, 30, "saturnRing", saturnData.distanceFromAxis);
     saturnRing.position.y += 0.4;
+    saturnMoon = addPlanet(saturnMoonData, saturnMoonData.distanceFromAxis, 4.7);
+    saturnMoon2 = addPlanet(saturnMoon2Data, saturnMoon2Data.distanceFromAxis, 4.7);
+    saturnMoon3 = addPlanet(saturnMoon3Data, saturnMoon3Data.distanceFromAxis, 4.7);
+    saturnMoon4 = addPlanet(saturnMoon4Data, saturnMoon4Data.distanceFromAxis, 4.7);
+    saturnMoon5 = addPlanet(saturnMoon5Data, saturnMoon5Data.distanceFromAxis, 4.7);
+    saturnMoon6 = addPlanet(saturnMoon6Data, saturnMoon6Data.distanceFromAxis, 4.7);
+    saturnMoon7 = addPlanet(saturnMoon7Data, saturnMoon7Data.distanceFromAxis, 4.7);
+    saturnMoon8 = addPlanet(saturnMoon8Data, saturnMoon8Data.distanceFromAxis, 4.7);
+    saturnMoon9 = addPlanet(saturnMoon9Data, saturnMoon9Data.distanceFromAxis, 4.7);
 
     uranus = addPlanet(uranusData, uranusData.distanceFromAxis, 0);
+    uranusMoon = addPlanet(uranusMoonData, uranusMoonData.distanceFromAxis, 3.5);
+    uranusMoon2 = addPlanet(uranusMoon2Data, uranusMoon2Data.distanceFromAxis, 3.5);
+    uranusMoon3 = addPlanet(uranusMoon3Data, uranusMoon3Data.distanceFromAxis, 3.5);
+    uranusMoon4 = addPlanet(uranusMoon4Data, uranusMoon4Data.distanceFromAxis, 3.5);
+    uranusMoon5 = addPlanet(uranusMoon5Data, uranusMoon5Data.distanceFromAxis, 3.5);
+    uranusMoon6 = addPlanet(uranusMoon6Data, uranusMoon6Data.distanceFromAxis, 3.5);
+    uranusMoon7 = addPlanet(uranusMoon7Data, uranusMoon7Data.distanceFromAxis, 3.5);
+    uranusMoon8 = addPlanet(uranusMoon8Data, uranusMoon8Data.distanceFromAxis, 3.5);
+    uranusMoon9 = addPlanet(uranusMoon9Data, uranusMoon9Data.distanceFromAxis, 3.5);
+
     neptune = addPlanet(neptuneData, neptuneData.distanceFromAxis, 0);
+    neptuneMoon = addPlanet(neptuneMoonData, neptuneMoonData.distanceFromAxis, 3.5);
+    neptuneMoon2 = addPlanet(neptuneMoon2Data, neptuneMoon2Data.distanceFromAxis, 3.5);
+    neptuneMoon3 = addPlanet(neptuneMoon3Data, neptuneMoon3Data.distanceFromAxis, 3.5);
+    neptuneMoon4 = addPlanet(neptuneMoon4Data, neptuneMoon4Data.distanceFromAxis, 3.5);
+    neptuneMoon5 = addPlanet(neptuneMoon5Data, neptuneMoon5Data.distanceFromAxis, 3.5);
+    neptuneMoon6 = addPlanet(neptuneMoon6Data, neptuneMoon6Data.distanceFromAxis, 3.5);
+    neptuneMoon7 = addPlanet(neptuneMoon7Data, neptuneMoon7Data.distanceFromAxis, 3.5);
+    neptuneMoon8 = addPlanet(neptuneMoon8Data, neptuneMoon8Data.distanceFromAxis, 3.5);
+    neptuneMoon9 = addPlanet(neptuneMoon9Data, neptuneMoon9Data.distanceFromAxis, 3.5);
+
     pluto = addPlanet(plutoData, plutoData.distanceFromAxis, 0);
+    plutoMoon = addPlanet(plutoMoonData, plutoMoonData.distanceFromAxis, 0.2);
+    plutoMoon2 = addPlanet(plutoMoon2Data, plutoMoon2Data.distanceFromAxis, 0.2);
+    plutoMoon3 = addPlanet(plutoMoon3Data, plutoMoon3Data.distanceFromAxis, 0.2);
+    plutoMoon4 = addPlanet(plutoMoon4Data, plutoMoon4Data.distanceFromAxis, 0.2);
+    plutoMoon5 = addPlanet(plutoMoon5Data, plutoMoon5Data.distanceFromAxis, 0.2);
+    plutoMoon6 = addPlanet(plutoMoon6Data, plutoMoon6Data.distanceFromAxis, 0.2);
+    plutoMoon7 = addPlanet(plutoMoon7Data, plutoMoon7Data.distanceFromAxis, 0.2);
+    plutoMoon8 = addPlanet(plutoMoon8Data, plutoMoon8Data.distanceFromAxis, 0.2);
+    plutoMoon9 = addPlanet(plutoMoon9Data, plutoMoon9Data.distanceFromAxis, 0.2);
 
     drawOrbits();
     update(renderer, scene, camera, controls);
